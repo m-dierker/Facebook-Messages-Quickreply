@@ -9,6 +9,6 @@
       "run_at": "document_idle"
     }
   ],
-  "web_accessible_resources": ["lib/jquery/jquery-2.0.3.min.map"],
+  "web_accessible_resources": ["lib/jquery/jquery-2.0.3.min.map", "img/big%20brother%20rob.png"],
   "manifest_version": 2
 }

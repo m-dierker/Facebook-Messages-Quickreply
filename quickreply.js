@@ -21,6 +21,9 @@ $(document).ready(function() {
         }
       }
     });
+
+    // Setup decorations for Facebook chat
+    setupDecorations();
   }
 });
 
@@ -35,5 +38,19 @@ function getMessageForKey(keycode) {
       return "Hey Clare,\n\nJust wanted to let you know there's no food left for the hackathon. I ate it all.\n\nThanks,\nMatthew";
     default:
       return undefined;
+  }
+}
+
+function setupDecorations() {
+  var nameSelector = 'h2#webMessengerHeaderName a';
+  var messagePaneSelector = 'ul#webMessengerRecentMessages';
+  var conversationName = $(nameSelector).text();
+
+  if (conversationName === "Nikoli Dryden") {
+    $(nameSelector).css('color', 'red');
+    $(messagePaneSelector).css('background-image', 'url("' + chrome.extension.getURL('img/big brother rob.png') + '")');
+  } else {
+    $(nameSelector).css('color', '');
+    $(messagePaneSelector).css('background-image', '');
   }
 }
