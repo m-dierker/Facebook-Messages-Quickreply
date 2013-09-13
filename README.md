@@ -4,3 +4,4 @@ Facebook Messenger Quickreply
 
 Instructions
 -------------------
+* Make sure you have Git installed on your computer. (Open a command line and type `test`)
