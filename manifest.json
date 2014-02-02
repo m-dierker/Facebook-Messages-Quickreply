@@ -5,10 +5,10 @@
   "content_scripts": [
     {
       "matches": ["http://facebook.com/*", "https://facebook.com/*", "http://*.facebook.com/*", "https://*.facebook.com/*"],
-      "js": ["lib/jquery/jquery-2.0.3.min.js", "lib/keyevent/keyevent.js", "quickreply.js"],
+      "js": ["lib/jquery/jquery-2.1.0.min.js", "lib/keyevent/keyevent.js", "quickreply.js"],
       "run_at": "document_idle"
     }
   ],
-  "web_accessible_resources": ["lib/jquery/jquery-2.0.3.min.map"],
+  "web_accessible_resources": ["lib/jquery/jquery-2.1.0.min.map"],
   "manifest_version": 2
 }
